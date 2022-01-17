@@ -1,0 +1,71 @@
+<div id="menu-lateral"></div>
+
+<p class="imagem">
+    <img src="laco1.jpg" alt="Laço1">
+</p>
+
+<p class="imagem">
+    <img src="laco2.jpg" alt="Laço2">
+</p>
+
+<!-- <p id="imagem">
+    <img src="laco3.jpg" alt="Laço3">
+</p> -->
+
+
+
+
+<style>
+#menu-lateral {
+    width: auto;
+    height: auto;
+    margin-left: -250px;
+    transition: margin-left 4.0s;
+    /* border: 1px solid black; */
+}
+
+.imagem{
+   /* display: none;*/
+    margin-left: -250px;
+    transition: margin-left 4.0s;
+    
+}
+
+
+img{
+    width:513px;
+    height:342px;
+}
+
+</style>
+
+
+
+
+
+<script>
+
+
+
+// var menuLateral = document.getElementById("menu-lateral");
+var menuLateral = document.getElementsByClassName("imagem");
+
+
+
+
+function carrega (e) {
+    
+ //for (let i = 0; i < menuLateral.length; i++) {
+    
+     //menuLateral[0].style.display="block";
+     e.preventDefault();
+     menuLateral[0].style.marginLeft = "1300px";
+    
+ //}
+//  menuLateral.style.marginLeft = "1300px";
+
+};
+
+window.onload= carrega;
+
+</script>
